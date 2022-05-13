@@ -1,0 +1,17 @@
+#!/bin/sh
+# - fsd
+# - anchor
+# - width
+# - depth
+# - files
+# - openflags
+# - sizes
+
+. $LKP_SRC/lib/reproduce-log.sh
+. $LKP_SRC/lib/common.sh
+. $LKP_SRC/lib/unit.sh
+. $LKP_SRC/lib/debug.sh
+
+[ -n "fds" ] || die "fsd must be specified for vdbench"
+
+echo "fsd=$fsd,anchor=/tmp/anchor,width=$width,depth=$depth,files=$files,sizes=$sizes" > /tmp/vdbench.task

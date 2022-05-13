@@ -17,9 +17,6 @@ vsftpd
 rpcbind
 update-inetd
 openbsd-inetd
-rusersd
-rusers
-rstatd
 bind9
 dnsutils
 apache2

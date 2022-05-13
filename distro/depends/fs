@@ -2,7 +2,6 @@ btrfs-tools
 xfsdump
 xfsprogs
 nfs-common
-f2fs-tools
 libselinux1
 uuid-dev
 samba

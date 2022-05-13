@@ -1,0 +1,9 @@
+#!/bin/sh
+
+errlog=/tmp/output/errorlog.html
+
+key_blocks_number=$(cat $errlog | tail -1 | sed 's/,//g' | sed 's/;//g' | awk '{print $12}')
+key_blocks_errors=$(cat $errlog | tail -1 | sed 's/,//g' | sed 's/;//g' | awk '{print $18}')
+
+echo "blocks_number: $key_blocks_number"
+echo "blocks_errors: $key_blocks_errors"

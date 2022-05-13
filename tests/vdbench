@@ -1,0 +1,11 @@
+#!/bin/sh
+
+. $LKP_SRC/lib/common.sh
+
+task=$(cat /tmp/vdbench.task)
+
+. $LKP_SRC/lib/reproduce-log.sh
+
+log_echo "$task"
+/lkp/benchmarks/vdbench/vdbench -f /tmp/vdbench.task -o /tmp/output -jv
+rm -rf /tmp/anchor

@@ -54,7 +54,7 @@ class LinuxTestcasesTableSet
        pmbench linkbench rocksdb cassandra redis power-idle
        mongodb ycsb memtier mcperf fio-jbod cyclictest filebench igt
        autonuma-benchmark adrestia kernbench rt-app migratepages intel-ipsec-mb
-       simd-stress bpftrace].freeze
+       simd-stress bpftrace vdbench].freeze
   LINUX_TESTCASES =
     %w[analyze-suspend boot blktests cpu-hotplug ext4-frags ftq ftrace-onoff fwq
        galileo irda-kernel kernel-builtin kernel-selftests kvm-unit-tests kvm-unit-tests-qemu

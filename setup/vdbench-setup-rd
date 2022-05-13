@@ -1,0 +1,8 @@
+#!/bin/sh
+# - rd
+# - fwd
+# - fwdrate
+# - elapsed
+# - interval
+
+echo "rd=$rd,fwd=$fwd,format=yes,fwdrate=max,elapsed=$elapsed,interval=$interval" >> /tmp/vdbench.task

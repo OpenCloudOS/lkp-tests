@@ -1,0 +1,16 @@
+#!/bin/sh
+# - fwd
+# - fsd
+# - file_io_type
+# - operation
+# - threads
+# - xfersize
+# - io
+
+cmd="fwd=$fwd,fsd=$fsd,fileio=$file_io_type,operation=$operation,threads=$threads,xfersize=$xfersize"
+if [ $io = "direct" ]; then
+	cmd="$cmd,openflags=directio"
+fi
+
+echo $cmd >> /tmp/vdbench.task
+
